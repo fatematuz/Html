@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form class="form-container">
+    <h1>Student Registration Form</h1>
+    <p>Fill out the form for registration</p>
+    <label for="fname">Name</label>
+    <div class="horizontal-stack">
+        <input type="text" id="fname" name="firstname" placeholder="First">
+        <input type="text" id="lname" name="lastname" placeholder="Last">
+    </div>
+    <div class="horizontal-stack">
+        <div>
+            <label for="birthdate">Birth Date</label>
+            <input type="date" id="birthdate" name="birthdate">
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="">Please Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <!-- Add more options here -->
+            </select>
+        </div>
+    </div>
+    <label for="address1">Address</label>
+    <input type="text" id="address1" name="address1" placeholder="Address line 1">
+    <input type="text" id="address2" name="address2" placeholder="Address line 2">
+    <div class="horizontal-stack">
+        <input type="text" id="city" name="city" placeholder="City">
+        <select id="region" name="region">
+            <option value="">Region</option>
+            <!-- Add options here -->
+        </select>
+    </div>
+    <div class="horizontal-stack">
+        <input type="text" id="zip" name="zip" placeholder="Postal/Zip Code">
+        <select id="country" name="country">
+            <option value="">Country</option>
+            <option value="us">United States</option>
+            <!-- Add more options here -->
+        </select>
+    </div>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="john.doe@example.com">
+    <div class="horizontal-stack">
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(201) 555-0123">
+        </div>
+        <div>
+            <label for="workphone">Work Phone</label>
+            <input type="tel" id="workphone" name="workphone" placeholder="(201) 555-0123">
+        </div>
+    </div>
+    <label for="company">Company</label>
+    <input type="text" id="company" name="company" placeholder="ACME LTD">
+    <label for="courses">Courses</label>
+    <select id="courses" name="courses">
+        <option value="">Please Select</option>
+        <!-- Add options here -->
+    </select>
+    <label for="comments">Comments</label>
+    <textarea id="comments" name="comments"></textarea>
+    <div class="horizontal-stack">
+        <input type="reset" value="Clear Fields">
+        <input type="submit" value="Submit Application">
+    </div>
+</form>
+</body>
+</html>
